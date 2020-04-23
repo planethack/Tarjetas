@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "297980793782",
+    "firebase_url": "https://tarjetascredito-6873c.firebaseio.com",
+    "project_id": "tarjetascredito-6873c",
+    "storage_bucket": "tarjetascredito-6873c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297980793782:android:209614e51416ec73f72717",
+        "android_client_info": {
+          "package_name": "com.carlos.tarjetas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297980793782-666lh3otpioek7njdej84cgcnu3456ic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carlos.tarjetas",
+            "certificate_hash": "9f75e9d0ae08081a9b20ec141db7d06c3278b74a"
+          }
+        },
+        {
+          "client_id": "297980793782-n45tnl5ns6di78fqim9qu98orvel2l15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2XwCzhu8MT5W-bBiBUoTDQeCsKwHGNsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297980793782-n45tnl5ns6di78fqim9qu98orvel2l15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

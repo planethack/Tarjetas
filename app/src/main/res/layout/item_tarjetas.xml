@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@drawable/esquinas_redondeadas"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgFranquicia"
+            android:layout_width="53dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            tools:srcCompat="@drawable/ic_visa" />
+
+        <TextView
+            android:id="@+id/txFranquicia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txFVencimiento"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:text="Franquicia"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/imgFranquicia"/>
+
+        <TextView
+            android:id="@+id/txNumero"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:typeface="sans"
+            android:fontFamily="serif-monospace"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Numero"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txFVencimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/txNumero"
+            android:textAlignment="textEnd"
+            android:text="F. Vencimiento"
+            android:fontFamily="serif-monospace"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/lbNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Numero de la tarjeta"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txNumero"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Numero de la tarjeta"
+        android:maxLength="16"
+        android:focusable="true"
+        android:inputType="number"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbNumero" />
+
+    <TextView
+        android:id="@+id/lbMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mes Vencimiento"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txMes"
+        app:layout_constraintTop_toBottomOf="@id/txNumero" />
+
+    <EditText
+        android:id="@+id/txMes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Mes de vencimiento"
+        android:maxLength="2"
+        android:inputType="number"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbMes" />
+
+    <TextView
+        android:id="@+id/lbAnio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Año Vencimiento"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txAnio"
+        app:layout_constraintTop_toBottomOf="@id/txNumero" />
+
+    <EditText
+        android:id="@+id/txAnio"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Año de Vencimiento"
+        android:maxLength="4"
+        android:inputType="numberDecimal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toEndOf="@+id/txMes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbAnio" />
+
+    <TextView
+        android:id="@+id/lbCupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cupo de la tarjeta"
+        android:textSize="14dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="@id/txCupo"
+        app:layout_constraintTop_toBottomOf="@+id/txMes" />
+
+    <EditText
+        android:id="@+id/txCupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Cupo de la tarjeta"
+        android:inputType="number"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbCupo" />
+
+    <TextView
+        android:id="@+id/lbSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Saldo de la tarjeta"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txSaldo"
+        app:layout_constraintTop_toBottomOf="@+id/txCupo" />
+
+    <EditText
+        android:id="@+id/txSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Saldo de la tarjeta"
+        android:inputType="number"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbSaldo" />
+
+    <TextView
+        android:id="@+id/lbDeuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Deuda de la tarjeta"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txDeuda"
+        app:layout_constraintTop_toBottomOf="@+id/txSaldo" />
+
+    <EditText
+        android:id="@+id/txDeuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Deuda actual de la tarjeta"
+        android:inputType="number"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbDeuda" />
+
+    <TextView
+        android:id="@+id/lbFranquicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Franquicia de la tarjeta"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/txFranquicia"
+        app:layout_constraintTop_toBottomOf="@+id/txDeuda"/>
+    <EditText
+        android:id="@+id/txFranquicia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Franquicia de la tarjeta"
+        android:inputType="text"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbFranquicia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
